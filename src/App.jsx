@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import ItemCard from "../components/ItemCard";
+import SearchBar from "../components/SearchBar";
 import itemsData from "./itemsByName.json"; 
 import "../style/ItemCard.css";
 
-
 export default function App() {
-  const [items, setItems] = useState([]); 
+  const [items, setItems] = useState([]);
+  const [input, setInput] = useState("");
 
   useEffect(() => {
     const transformedItems = Object.entries(itemsData).map(([key, value]) => ({
@@ -19,9 +20,13 @@ export default function App() {
 
   return (
     <main id="gallery">
-      {items.map((item) => (
-        <ItemCard key={item.id} name={item.name} icon={item.icon} />
-      ))}
+      <SearchBar input={input} setInput={setInput}/>
+      <div id="gallery">
+        {items.map((item) => (
+          item.name.toLowerCase().startsWith(input.toLowerCase()) &&
+          <ItemCard key={item.id} name={item.name} icon={item.icon} />
+        ))}
+      </div>
     </main>
   );
 }
