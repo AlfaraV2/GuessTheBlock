@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import ItemCard from "../components/ItemCard";
 import SearchBar from "../components/SearchBar";
-import itemsData from "./itemsByName.json"; 
+import itemsData from "../items/itemsByName.json"; 
 import "../style/ItemCard.css";
 
-export default function App() {
+export default function Gallery() {
   const [items, setItems] = useState([]);
   const [input, setInput] = useState("");
 
@@ -19,7 +19,7 @@ export default function App() {
   }, []);
 
   return (
-    <main id="gallery">
+    <main>
       <SearchBar input={input} setInput={setInput}/>
       <div id="gallery">
         {items.map((item) => (
