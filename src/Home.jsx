@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
-import SearchBar from "../components/SearchBar";
+import React from "react";
 import GuessTheBlock from "../components/GuessTheBlock";
 import { Link } from "react-router-dom";
 import "../style/ItemCard.css";
+import "../style/Home.css";
 
 export default function Home() {
-  const [input, setInput] = useState("");
 
   return (
     <main>
+      <h1>Guess The Block</h1>
       <GuessTheBlock />
-      <Link to={"/gallery"}>Gallery</Link>
+      <Link to={"/gallery"} className="gallery-link">Gallery</Link>
     </main>
   );
 }

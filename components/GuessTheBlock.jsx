@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import itemsData from "../items/itemsByName.json";
+import "../style/GuessTheBlock.css";
 
 export default function GuessTheBlock() {
   const [currentBlock, setCurrentBlock] = useState(null);
@@ -36,7 +37,7 @@ export default function GuessTheBlock() {
     if (e.key === "Enter") {
       if (input.toLowerCase() === currentBlock.name.toLowerCase()) {
         setMessage("Validé");
-        setTimeout(getRandomBlock, 1000);
+        setTimeout(getRandomBlock, 500);
       } else {
         setMessage("Réessayez");
       }
@@ -47,10 +48,12 @@ export default function GuessTheBlock() {
 
   return (
     <div className="guess-container">
-      <img
-        src={`data:image/png;base64,${currentBlock.icon}`}
-        className="guess-image"
-      />
+      <div>
+        <img
+          src={`data:image/png;base64,${currentBlock.icon}`}
+          className="guess-image"
+        />
+      </div>
       <input
         type="text"
         placeholder="Guess the block..."

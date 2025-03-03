@@ -1,0 +1,27 @@
+@font-face {
+    font-family: PixelCastle;
+    src: url(../src/fonts/Pixelcastle-Regular.otf);
+  }
+
+main{
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    text-align: center;
+    background-color: #101010;
+    padding:50px;
+}
+
+h1{
+    font-family:"PixelCastle";
+    font-size: 75px ;
+    font-weight: "regular";
+    color: #E0E0E0;
+}
+
+.gallery-link{
+    font-family:"PixelCastle";
+    font-size: 25px ;
+    font-weight: "regular";
+    color: #E0E0E0;
+}
