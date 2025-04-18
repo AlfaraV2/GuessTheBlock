@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: PixelCastle;
+  src: url(../src/fonts/Pixelcastle-Regular.otf);
+}
+
+.guess-input {
+  width: 250px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: #1f1f1f;
+  font-size: 16px;
+  font-family: Poppins;
+  color: #e0e0e0;
+  padding: 5px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.guess-input:hover {
+  box-shadow: 0 0 0 2px #e0e0e0;
+}
+
+.guess-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #e0e0e0;
+}
+
+.guess-container {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.guess-image {
+  width: 64px;
+  height: 64px;
+}
+
+.skip-button {
+  width: auto;
+  height: auto;
+  padding: 10px 30px;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    159deg,
+    rgba(62, 180, 137, 1) 0%,
+    rgba(144, 238, 144, 1) 100%
+  );
+  font-size: 16px;
+  font-family: Poppins;
+  color: #1f1f1f;
+  border: none;
+}
+
+.skip-button:hover {
+  color: #e0e0e0;
+}
+
+.block-display {
+  width: auto;
+  height: auto;
+  background: linear-gradient(
+    159deg,
+    rgba(62, 180, 137, 1) 0%,
+    rgba(144, 238, 144, 1) 100%
+  );
+  padding: 25px;
+  border-radius: 25%;
+}
+
+.guess-message {
+  font-size: 16px;
+  font-family: "Poppins";
+  margin: 0%;
+}
+
+.guess-message.success {
+  color: #5fe27a;
+}
+
+.guess-message.error {
+  color: #ff6961;
+}
+
+.score-text {
+  font-size: 18px;
+  font-family: "Poppins";
+  color: #e0e0e0;
+  margin: 0%;
+}
+
+.hint-text {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #e0e0e0;
+  margin: 0%;
+}
+
+.hint {
+  font-family: "Poppins";
+  font-size: 18px;
+  color: #90ee90;
+}
+
+.attempt-hint {
+  font-size: 14px;
+  color: #ff6961;
+  font-family: "Poppins";
+  margin: 0%;
+}
+
+.block-category {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+  color: #90ee90;
+  text-transform: uppercase;
+  margin: 0%;
+}
+
+.timer-bar {
+  height: 100%;
+  transition: width 1s linear, background 1s linear;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.timer-bar-container {
+  width: 25%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}

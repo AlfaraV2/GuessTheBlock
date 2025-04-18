@@ -1,27 +1,24 @@
-.filter-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 10px;
-    padding : 20px;
-    margin-top: 10px;
-  }
-  
-  .filter-btn {
-    width: 60px;
-    height: 60px;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(159deg, rgba(62,180,137,1) 0%, rgba(144,238,144,1) 100%);
-    border: none;
-    cursor: pointer;
-  }
-  
-  .filter-btn img.filter-icon {
-    width: 40px;
-    height: 40px;
-  }
-  
-  
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.home-link {
+  font-family: "PixelCastle";
+  font-size: 75px;
+  font-weight: "regular";
+  text-decoration: none;
+  color: #e0e0e0;
+}

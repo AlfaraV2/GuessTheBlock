@@ -1,0 +1,55 @@
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 15px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.filter-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    159deg,
+    rgba(62, 180, 137, 1) 0%,
+    rgba(144, 238, 144, 1) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+.filter-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 70px;
+}
+
+.filter-btn img.filter-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.filter-btn.active {
+  background: linear-gradient(
+    159deg,
+    rgba(255, 80, 80, 1) 0%,
+    rgba(255, 150, 150, 1) 100%
+  );
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(255, 100, 100, 0.6);
+}
+
+.category-label {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  word-wrap: break-word;
+  color: #e0e0e0;
+}

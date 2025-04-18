@@ -1,27 +1,89 @@
 @font-face {
-    font-family: PixelCastle;
-    src: url(../src/fonts/Pixelcastle-Regular.otf);
+  font-family: PixelCastle;
+  src: url(../src/fonts/Pixelcastle-Regular.otf);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #101010;
+}
+
+main {
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  text-align: center;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+h1 {
+  font-family: "PixelCastle";
+  font-size: 75px;
+  color: #e0e0e0;
+  margin: 50px;
+}
+
+.gallery-link {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 100px;
+  font-family: "PixelCastle";
+  font-size: 22px;
+  color: #e0e0e0;
+  text-decoration: none;
+  border: #e0e0e0 2px solid;
+}
+
+.gallery-link:hover {
+  background: linear-gradient(
+    159deg,
+    rgba(62, 180, 137, 1) 0%,
+    rgba(144, 238, 144, 1) 100%
+  );
+}
+
+.game-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 100px;
+  padding: 30px;
+  background-color: #181818;
+  color: #cccccc;
+  font-family: "Poppins";
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-column {
+  flex: 1;
+  max-width: 100%;
+}
+
+.footer-column ul {
+  text-align: left;
+}
+
+.footer-column h3 {
+  color: #90ee90;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #90ee90;
+}
+
+@media (min-width: 768px) {
+  .game-footer {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-main{
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    text-align: center;
-    background-color: #101010;
-    padding:50px;
-}
-
-h1{
-    font-family:"PixelCastle";
-    font-size: 75px ;
-    font-weight: "regular";
-    color: #E0E0E0;
-}
-
-.gallery-link{
-    font-family:"PixelCastle";
-    font-size: 25px ;
-    font-weight: "regular";
-    color: #E0E0E0;
+  .footer-column {
+    max-width: 33%;
+  }
 }

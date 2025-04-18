@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/ItemCard.css";
+import "../style/components-style/ItemCard.css";
 
 export default function ItemCard({ name, icon }) {
   const imageUrl = `data:image/png;base64,${icon}`;
